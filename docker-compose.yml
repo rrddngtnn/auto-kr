@@ -1,0 +1,11 @@
+services:
+  auto-kr:
+    build: .
+    volumes:
+      - auto_kr_data:/data
+    env_file:
+      - .env.example
+    command: ["--help"]
+
+volumes:
+  auto_kr_data:
